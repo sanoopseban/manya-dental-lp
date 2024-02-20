@@ -1,0 +1,381 @@
+@import "common.css";
+
+.banner-section{
+    margin-top: 170px;
+    padding: 80px 0;
+}
+.banner-section h1 span{
+    color: #585656;
+}
+.banner-section .banner-content{
+    width: 45%;
+    padding-top: 30px;
+}
+.banner-section .banner-content p{
+    margin-bottom: 0;
+}
+.banner-section  .row{
+    align-items: flex-start ;
+    justify-content: space-between;
+}
+.banner-section .banner-content .button-primary{
+    margin-top: 30px;
+}
+.banner-form {
+    background-color: var(--primary-color);
+padding: 50px 20px;
+border-radius: 20px;
+margin-top: -50px;
+z-index: 9;
+position: relative;
+}
+.banner-form .row{
+    margin: 0;  
+}
+.banner-form .form-group{
+    width: 28%;
+    margin-bottom: 0;
+    padding: 0px 20px;
+    position: relative;
+}
+.banner-form .form-group span{
+    position: absolute;
+right: 40px;
+top: 17px;
+}
+.banner-form .form-group input{
+    height: 60px;
+    border-radius: 0;
+    border: 0px;
+}
+.form-btn{
+     padding: 0px 20px;
+    width: 16%;
+}
+.form-btn .button-primary{
+    width: 100%;
+}
+
+.icon-text-block{
+    display: flex;
+    margin: 0 -40px;
+}
+.icon-text-block .icon-box{
+    display: flex;
+    padding: 0 30px;
+    position: relative;
+    width: 33.33%;
+}
+.icon-text-block .icon-box:after{
+    content: "";
+    background-color: #ccc;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+}
+.icon-text-block .icon-box:last-child:after{
+    display: none;
+}
+.icon-text-block .icon-text{
+    padding-left: 30px;
+}
+.icon-text-block .icon-text p:last-child{
+    margin-bottom: 0;
+}
+
+.video-text-block{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    background-color: #FFF0F1;padding: 15px;
+    border-radius: 10px;
+}
+.video-thumbnail{
+    width: 50%;
+}
+.videoblock-text{
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.videoblock-text{
+    background-image: url('data:image/svg+xml,<svg width="95" height="100" viewBox="0 0 95 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M79.2449 69.3373C72.0992 91.3773 50.0113 104.303 29.9101 98.2084C9.80886 92.1135 -4.44783 46.9422 2.69785 24.9023C9.84354 2.86234 65.8736 -3.06199 85.9748 3.0329C106.076 9.12779 86.3906 47.2974 79.2449 69.3373Z" fill="%23CA2129" fill-opacity="0.1"/></svg>');
+    background-repeat: no-repeat;
+background-size: 85px;
+background-position: 0px 25px;
+}
+.videoblock-text h2 span{
+color: #585656;
+}
+.videotext-count-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.count-box{
+    width: 48%;
+}
+.count-box{
+    background-color: #FFD8DA;
+    height: 95px;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+.count-box h4{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.count-box p{
+    margin-bottom: 0;
+}
+.count-box.blue {
+    background-color: rgba(78, 194, 209, 0.22);
+}
+.expert-dentist-section h2{
+    color: #292929;
+}
+.expert-dentist-section h2 span{
+    color: var(--primary-color);
+}
+.expert-dentist-block{
+    display: flex;
+}
+.expert-dentist-block{
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: -55px;
+    margin-right: -55px;
+}
+.expert-dentist{
+    width: 33.33%;
+    padding: 0 40px;
+}
+.expert-dentist img{
+    width: 100%;
+}
+.doctor-details{
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -60px;
+position: relative;
+}
+.doctor-details h4{
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+.doctor-details  p{
+    color: #fff;
+    font-size: 15px;
+
+}
+.section-faq {
+    text-align: center;
+}
+.section-faq h2 span{
+color: #585656;
+}
+.section-faq h2 {
+    margin-top: 30px;
+}
+.faq-head-box{
+    text-align: center;
+    background-color: #FFD8DA;
+   display: inline;
+width: auto;
+padding: 2px 5px;
+font-size: 22px;
+}
+
+
+.collapsible-link span{
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translate(0%, -50%) rotate(0deg) ;
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+}
+
+.collapsible-link[aria-expanded="true"] span {
+  transform: translate(0%, -35%) rotate(180deg) ;
+}
+.collapsible-link[aria-expanded="true"] span path{
+    fill: #CA2129;
+}
+.accordion > .card > .card-header{
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.accordion > .card{
+    border: 0;
+    margin-bottom: 20px;
+}
+.accordion > .card > .card-header button{
+    width: 100%;
+    text-align: left;
+    padding: 20px 30px;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    color: #CA2129;
+    border-color: #FF8D8D;
+    text-decoration: none;
+}
+.accordion > .card > .card-header button.collapsed{
+ border: 1px solid #C2C1C1;
+ color: #585656;
+}
+.accordion {
+  overflow-anchor: none;
+  width: 100%;
+  margin-top: 30px;
+}
+.card-body{
+    text-align: left;
+    padding: 30px;
+}
+.card-body ul{
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: #292929;
+    padding: 35px 0px 20px;
+}
+footer .row{
+    justify-content: space-between;
+}
+footer  p{
+    color: #fff;
+    text-align: center;
+}
+footer .row p{
+    padding-top: 10px;
+    font-size: 15px;
+}
+footer  p a{
+    color: #fff;
+}
+footer  p a:hover{
+    color: #fff;
+}
+.copyright-text{
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.video-section{
+    padding: 0 0;
+}
+.section-faq{
+    padding-top: 0;
+}
+@media only screen and (max-width: 767px) {
+    .banner-section .banner-content{
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .banner-section {
+      margin-top: 100px;
+    }
+    .banner-image{
+        display: none;
+    }
+    .banner-form {
+      margin-top: 40px;
+    }
+    .row.d-block{
+        margin: 0;
+    }
+    .banner-form .form-group {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .form-btn {
+  width: 100%;
+}
+.icon-text-block {
+  margin: 0 0px;
+  flex-wrap: wrap;
+}
+.icon-text-block .icon-box {
+  padding: 0px 0px 30px;
+  width: 100%;
+}
+.icon-text-block .icon-box:last-child{
+    padding: 0px 0px 0px;
+}
+.icon-text-block .icon-box::after {
+    display: none;
+}
+.video-thumbnail {
+  width: 100%;
+}
+.videoblock-text{
+    padding-left: 0px;
+padding-right: 00px;
+    width: 100%;
+}
+.video-text-block {
+    flex-wrap: wrap;
+
+}
+.videotext-count-box {
+  width: 100%;
+}
+.videotext-count-box p{
+    font-size: 16px;
+    line-height: 20px;
+}
+.expert-dentist-section .row{
+    margin:0;
+}
+.expert-dentist-section .expert-dentist-block{
+    margin: 0;
+    flex-wrap: nowrap;
+overflow: auto;
+gap: 30px;
+}
+.expert-dentist {
+  width: 100%;
+padding: 0 0px;
+min-width: 85%;
+}
+.doctor-details {
+  padding: 15px 10px;
+}
+.doctor-details p{
+    margin-bottom: 0;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.section-faq .row{
+    margin: 0;
+}
+.accordion > .card > .card-header button {
+  padding: 20px 38px 20px 15px;
+  font-size: 17px;
+}
+.card-body{
+    padding: 30px 15px;
+}
+}

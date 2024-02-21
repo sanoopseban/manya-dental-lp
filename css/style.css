@@ -2,7 +2,7 @@
 
 .banner-section{
     margin-top: 170px;
-    padding: 80px 0;
+    padding: 60px 0 80px;
 }
 .banner-section h1 span{
     color: #585656;
@@ -29,9 +29,10 @@
     background-color: var(--primary-color);
 padding: 50px 20px;
 border-radius: 20px;
-margin-top: 0px;
+margin-top: -20px;
 z-index: 9;
 position: relative;
+box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.25);
 }
 .banner-form .row{
     margin: 0;  
@@ -51,13 +52,16 @@ top: 17px;
     height: 60px;
     border-radius: 0;
     border: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .form-btn{
      padding: 0px 20px;
     width: 16%;
 }
-.form-btn .button-primary{
+.form-btn .button-secondary{
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
 
 .icon-text-block{
@@ -107,11 +111,18 @@ top: 20px;
 .video-thumbnail a span{
     background: #FF8D8D;
 display: block;
-padding: 20px;
+padding: 20px 20px 15px;
 border-radius: 10px;
+text-align: center;
+color: #292929;
+font-weight: 500;
 }
 .video-thumbnail a:hover span{
     background-color: #000;
+    color: #fff;
+}
+.video-thumbnail a:hover{
+    text-decoration: none;
 }
 .videoblock-text{
     width: 50%;
@@ -142,7 +153,7 @@ color: #585656;
 }
 .count-box{
     background-color: #FFD8DA;
-    height: 95px;
+    height: 110px;
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -150,7 +161,7 @@ justify-content: center;
 }
 .count-box h4{
     margin-bottom: 0;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
 }
 .count-box p{
@@ -179,6 +190,10 @@ line-height: 20px;
 .expert-dentist{
     width: 33.33%;
     padding: 0 40px;
+    transition: 0.5s;
+}
+.expert-dentist:hover{
+    transform: scale(1.1);
 }
 .expert-dentist img{
     width: 100%;
@@ -325,6 +340,13 @@ h1 br{
 }
 .banner-form{
     margin-top: 30px;
+}
+.videoblock-text {
+  width: 50%;
+  padding-left: 35px;
+}
+.videoblock-text h2{
+    margin-bottom: 30px;
 }
 }
 @media only screen and (max-width: 1200px) {
@@ -556,7 +578,7 @@ h1 {
         margin: 0;
     }
     .accordion > .card > .card-header button {
-      padding: 20px 38px 20px 15px;
+      padding: 20px 50px 20px 15px;
       font-size: 17px;
     }
     .card-body{
@@ -645,4 +667,19 @@ height: 100%;
   padding: 17px 8px 20px;
   right: 8px;
   top: 0px;}
+}
+
+.owl-prev:hover{
+    background-color: transparent!important;
+}
+.owl-prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}.owl-next{
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
 }

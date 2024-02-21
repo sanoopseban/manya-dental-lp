@@ -113,7 +113,11 @@ a:-webkit-any-link:focus-visible {
 .container {
     max-width: 1366px;
 }
-
+@media only screen and (max-width: 1600px) {
+.container {
+    max-width: 1200px;
+}
+}
 .button-primary {
     background: var(--primary-color);
     border-radius: 0;

@@ -8,8 +8,12 @@
     color: #585656;
 }
 .banner-section .banner-content{
-    width: 45%;
-    padding-top: 30px;
+    width: 50%;
+    padding-top: 0px;
+}
+.banner-image{
+    width: 50%;
+    text-align: right;
 }
 .banner-section .banner-content p{
     margin-bottom: 0;
@@ -25,7 +29,7 @@
     background-color: var(--primary-color);
 padding: 50px 20px;
 border-radius: 20px;
-margin-top: -50px;
+margin-top: 0px;
 z-index: 9;
 position: relative;
 }
@@ -64,7 +68,7 @@ top: 17px;
     display: flex;
     padding: 0 30px;
     position: relative;
-    width: 33.33%;
+    width: 100%;
 }
 .icon-text-block .icon-box:after{
     content: "";
@@ -93,6 +97,21 @@ top: 17px;
 }
 .video-thumbnail{
     width: 50%;
+    position: relative;
+}
+.video-thumbnail a{
+    position: absolute;
+left: 15px;
+top: 20px;
+}
+.video-thumbnail a span{
+    background: #FF8D8D;
+display: block;
+padding: 20px;
+border-radius: 10px;
+}
+.video-thumbnail a:hover span{
+    background-color: #000;
 }
 .videoblock-text{
     width: 50%;
@@ -132,9 +151,12 @@ justify-content: center;
 .count-box h4{
     margin-bottom: 0;
     font-weight: 600;
+    font-size: 20px;
 }
 .count-box p{
     margin-bottom: 0;
+    font-size: 16px;
+line-height: 20px;
 }
 .count-box.blue {
     background-color: rgba(78, 194, 209, 0.22);
@@ -185,6 +207,8 @@ position: relative;
     text-align: center;
 }
 .section-faq h2 span{
+color: #585656;
+}.icon-content-section h2 span{
 color: #585656;
 }
 .section-faq h2 {
@@ -283,16 +307,78 @@ footer  p a:hover{
     margin-top: 30px;
 }
 
-.video-section{
-    padding: 0 0;
+@media only screen and (max-width: 1600px) {
+.banner-section .banner-content {
+  width: 60%;
+  padding-top: 0px;
+  padding-right: 60px;
 }
-.section-faq{
-    padding-top: 0;
+.banner-image {
+  width: 40%;
 }
-@media only screen and (max-width: 767px) {
+h1 {
+  font-size: 30px;
+line-height: 40px;
+}
+h1 br{
+    display: none;
+}
+.banner-form{
+    margin-top: 30px;
+}
+}
+@media only screen and (max-width: 1200px) {
+    .banner-section .row {
+      margin: 0;
+    }
+    .banner-image{
+        width: 40%;
+    }
+    .banner-form {
+  margin-top: 40px;
+}
+.banner-section .row {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.icon-text-block {
+  display: flex;
+  margin: 0 0px;
+}
+footer .row{
+    margin: 0;
+}
+
+h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  line-height: 36px;
+}
+.banner-form .form-group {
+  padding: 0px 5px;
+}
+.form-btn {
+  padding: 0px 5px;
+}
+.expert-dentist-section .row{
+    margin: 0;
+}
+.expert-dentist {
+  width: 33.33%;
+  padding: 0 0px;
+}
+.expert-dentist-section .row.expert-dentist-block{
+    margin-top: 30px;
+}
+.section-faq .row{
+    margin: 0;
+}
+}
+
+@media only screen and (max-width: 992px) {
     .banner-section .banner-content{
         width: 100%;
-        padding: 0px 15px;
+        padding: 60px 15px;
     }
     .banner-section {
       margin-top: 100px;
@@ -311,71 +397,252 @@ footer  p a:hover{
       margin-bottom: 20px;
     }
     .form-btn {
-  width: 100%;
-}
-.icon-text-block {
-  margin: 0 0px;
-  flex-wrap: wrap;
-}
-.icon-text-block .icon-box {
-  padding: 0px 0px 30px;
-  width: 100%;
-}
-.icon-text-block .icon-box:last-child{
-    padding: 0px 0px 0px;
-}
-.icon-text-block .icon-box::after {
-    display: none;
-}
-.video-thumbnail {
-  width: 100%;
-}
-.videoblock-text{
-    padding-left: 0px;
-padding-right: 00px;
-    width: 100%;
-}
-.video-text-block {
-    flex-wrap: wrap;
+      width: 100%;
+    }
+    .icon-text-block {
+      margin: 0 0px;
+      flex-wrap: wrap;
+    }
+    .icon-text-block .icon-box {
+      padding: 0px 0px 60px;
+      width: 100%;
+    }
+    .icon-text-block .icon-box:last-child{
+        padding: 0px 0px 0px;
+    }
+    .icon-text-block .icon-box::after {
+        display: none;
+    }
+    .video-thumbnail {
+      width: 100%;
+    }
+    .video-thumbnail img{
+        width: 100%;
+    }
+    .videoblock-text{
+        padding-left: 0px;
+    padding-right: 00px;
+        width: 100%;
+    }
+    .video-text-block {
+        flex-wrap: wrap;
 
+    }
+    .videotext-count-box {
+      width: 80%;
+    }
+    .expert-dentist-section .row{
+        margin:0;
+    }
+    .expert-dentist-section .expert-dentist-block{
+        margin: 0;
+        flex-wrap: nowrap;
+    overflow: auto;
+    gap: 30px;
+    }
+    .expert-dentist {
+      width: 100%;
+    padding: 0 0px;
+    min-width: 60%;
+    }
+    .doctor-details {
+      padding: 15px 10px;
+    }
+    .doctor-details p{
+        margin-bottom: 0;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .section-faq .row{
+        margin: 0;
+    }
+    .accordion > .card > .card-header button {
+      padding: 20px 38px 20px 15px;
+      font-size: 17px;
+    }
+    .card-body{
+        padding: 30px 15px;
+    }
+    footer{
+        padding: 35px 15px 20px;
+    }
+    section {
+  padding:30px 0px;
 }
-.videotext-count-box {
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .banner-section .banner-content{
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .banner-section {
+      margin-top: 100px;
+    }
+    .banner-image{
+        display: none;
+    }
+    .banner-form {
+      margin-top: 40px;
+    }
+    .row.d-block{
+        margin: 0;
+    }
+    .banner-form .form-group {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .form-btn {
+      width: 100%;
+    }
+    .icon-text-block {
+      margin: 0 0px;
+      flex-wrap: wrap;
+    }
+    .icon-text-block .icon-box {
+      padding: 0px 0px 30px;
+      width: 100%;
+    }
+    .icon-text-block .icon-box:last-child{
+        padding: 0px 0px 0px;
+    }
+    .icon-text-block .icon-box::after {
+        display: none;
+    }
+    .video-thumbnail {
+      width: 100%;
+    }
+    .videoblock-text{
+        padding-left: 0px;
+    padding-right: 00px;
+        width: 100%;
+    }
+    .video-text-block {
+        flex-wrap: wrap;
+
+    }
+    .videotext-count-box {
+      width: 100%;
+    }
+    .videotext-count-box p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .expert-dentist-section .row{
+        margin:0;
+    }
+    .expert-dentist-section .expert-dentist-block{
+        margin: 0;
+        flex-wrap: nowrap;
+    overflow: auto;
+    gap: 30px;
+    }
+    .expert-dentist {
+      width: 100%;
+    padding: 0 0px;
+    min-width: 85%;
+    }
+    .doctor-details {
+      padding: 15px 10px;
+    }
+    .doctor-details p{
+        margin-bottom: 0;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .section-faq .row{
+        margin: 0;
+    }
+    .accordion > .card > .card-header button {
+      padding: 20px 38px 20px 15px;
+      font-size: 17px;
+    }
+    .card-body{
+        padding: 30px 15px;
+    }
+}
+
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1001;
+}
+
+#light {
+  display: none;
+  position: absolute;
+top: 167px;
+left: 50%;
+max-width: 600px;
+max-height: 75%;
+border: 2px solid #FFF;
+background: #FFF;
+z-index: 99999;
+overflow: visible;
+transform: translateX(-50%);
+height: 100%;
+}
+
+#boxclose {
+  float: right;
+cursor: pointer;
+color: #fff;
+border: 1px solid #000;
+border-radius: 0px;
+background: #000;
+font-size: 44px;
+font-weight: normal;
+display: inline-block;
+line-height: 0px;
+padding: 25px 15px 30px;
+position: absolute;
+right: -62px;
+top: 0px;
+z-index: 1002;
+opacity: 0.9;
+}
+#boxclose :hover{
+    text-decoration: none;
+}
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover ~ #boxclose {
+  display:none;
+}
+
+.test:hover ~ .test2 {
+  display: none;
+}
+
+video{
+    width: 100%;
+height: 100%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-color)!important;
+}
+
+@media only screen and (max-width: 767px) {
+#light {
+  max-width: 100%;
+  max-height: 75%;
+  height: 100%;
   width: 100%;
 }
-.videotext-count-box p{
-    font-size: 16px;
-    line-height: 20px;
-}
-.expert-dentist-section .row{
-    margin:0;
-}
-.expert-dentist-section .expert-dentist-block{
-    margin: 0;
-    flex-wrap: nowrap;
-overflow: auto;
-gap: 30px;
-}
-.expert-dentist {
-  width: 100%;
-padding: 0 0px;
-min-width: 85%;
-}
-.doctor-details {
-  padding: 15px 10px;
-}
-.doctor-details p{
-    margin-bottom: 0;
-    line-height: 20px;
-    margin-top: 10px;
-}
-.section-faq .row{
-    margin: 0;
-}
-.accordion > .card > .card-header button {
-  padding: 20px 38px 20px 15px;
-  font-size: 17px;
-}
-.card-body{
-    padding: 30px 15px;
-}
+#boxclose {
+  font-size: 30px;
+  padding: 17px 8px 20px;
+  right: 8px;
+  top: 0px;}
 }

@@ -3,7 +3,7 @@
     --black: #000000;
     --body-color:#292929;
     --white: #ffffff;
-    --primary-color: #CA2129;
+    --primary-color: #C80000;
     --dark-gray: #242424;
     --light-gray: #D9D9D9;
     --breakpoint-xs: 0;
@@ -121,9 +121,9 @@ a:-webkit-any-link:focus-visible {
     background: var(--primary-color);
     border-radius: 0;
     color: var(--white) !important;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 15px 35px;
     transition: all 0.2s ease-in-out;
     border: 1px solid var(--primary-color);
     font-weight: 400;
@@ -131,7 +131,7 @@ a:-webkit-any-link:focus-visible {
     float: left;
         font-family: "Inter", sans-serif;
 /*       display: block;*/
-border-radius: 50px;
+border-radius: 10px;
 }
 
 .button-primary:hover {
